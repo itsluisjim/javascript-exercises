@@ -1,4 +1,10 @@
-const removeFromArray = function() {
+const removeFromArray = function(arr) {
+    
+    let arrOfArgs = [...arguments]; 
+  
+    arrOfArgs.shift(); 
+    
+    return arr.filter(item => arrOfArgs.indexOf(item) == -1);
 
 };
 
